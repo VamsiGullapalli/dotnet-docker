@@ -15,7 +15,7 @@ The steps to run are:
 1. clone this tool: `git clone https://github.com/VamsiGullapalli/dotnet-docker` 
 2. cd into the folder: `cd dotnet-docker`
 3. Build a docker image: `docker build . -t webapp`
-4. Run a container with: `docker run --rm -it -p 8080:80 webapp`
+4. Run a container with: `docker run -it -p 8080:80 webapp`
     # winpty 
 5. Open your browser and navigate to: `localhost:8080`
 
