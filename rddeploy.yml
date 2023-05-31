@@ -1,32 +1,32 @@
 - apiVersion: apps/v1
   kind: Deployment
   metadata:
-    name: dotnetdemo6
+    name: tarundk8container001
   spec:
     replicas: 1
     selector:
       matchLabels:
-        app: dotnetdemo6
+        app: tarundk8container001
     template:
       metadata:
         labels:
-          app: dotnetdemo6
+          app: tarundk8container001
       spec:
         nodeSelector:
           beta.kubernetes.io/os: linux
         containers:
-          - name: dotnetdemo6
-            image: demoacrvamsi.azurecr.io/vamsi001
+          - name: tarundk8container001
+            image: tarundk8acr.azurecr.io/tarundk8
             resources: null
             ports:
               - containerPort: 80
 - apiVersion: v1
   kind: Service
   metadata:
-    name: dotnetdemo6
+    name: tarundk8container001
   spec:
     type: LoadBalancer
     ports:
     - port: 80
     selector:
-      app: dotnetdemo6
+      app: tarundk8container001
