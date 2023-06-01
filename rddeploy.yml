@@ -16,7 +16,7 @@
           beta.kubernetes.io/os: linux
         containers:
           - name: tarundk8container001
-            image: tarundk8acr.azurecr.io/tarundk8
+            image: dotnetdemok8.azurecr.io/vamsi
             resources: null
             ports:
               - containerPort: 80
